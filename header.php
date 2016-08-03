@@ -35,7 +35,7 @@
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 						</a>
 					</div>
 					<!-- /logo -->
@@ -44,7 +44,7 @@
 					<div class="following bar light">
 						 <div class="ui container">
 							 <nav class="nav" role="navigation">
-								 <div class="ui secondary network menu pointing">
+								 <div class="ui secondary seven item menu ">
 									 <?php
 									 wp_nav_menu(array(
 												 'menu'    => 2, //menu id

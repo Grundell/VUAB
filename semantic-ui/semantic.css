@@ -9,6 +9,39 @@
  *
  */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+
+@font-face {
+	font-family:'Avenir';
+	src:url('../fonts/Avenir-Book.woff2') format('woff2'),
+		url('../fonts/Avenir-Book.woff') format('woff'),
+		url('../fonts/Avenir-Book.ttf') format('truetype'),
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+	font-family: 'Caecilia LT';
+	src: url('../fonts/CaeciliaLTStd-Roman.eot');
+	src: local('Caecilia LT Std 55 Roman'), local('CaeciliaLTStd-Roman'),
+		url('../fonts/CaeciliaLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CaeciliaLTStd-Roman.woff2') format('woff2'),
+		url('../fonts/CaeciliaLTStd-Roman.woff') format('woff'),
+		url('../fonts/CaeciliaLTStd-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Caecilia LT';
+	src: url('../fonts/CaeciliaLTStd-Bold.eot');
+	src: local('Caecilia LT Std 75 Bold'), local('CaeciliaLTStd-Bold'),
+		url('../fonts/CaeciliaLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CaeciliaLTStd-Bold.woff2') format('woff2'),
+		url('../fonts/CaeciliaLTStd-Bold.woff') format('woff'),
+		url('../fonts/CaeciliaLTStd-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 /*!
  * # Semantic UI 2.2.2 - Reset
  * http://github.com/semantic-org/semantic-ui/
@@ -524,7 +557,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #FFFFFF;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -540,7 +573,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   font-weight: bold;

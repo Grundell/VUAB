@@ -91,6 +91,12 @@ function html5blank_nav()
 	);
 }
 
+// Removes ul class from wp_nav_menu
+function remove_ul ( $menu ){
+    return preg_replace( array( '#^<ul[^>]*>#', '#</ul>$#' ), '', $menu );
+}
+add_filter( 'wp_nav_menu', 'remove_ul' );
+
 class Walker_Quickstart_Menu extends Walker {
 
     // Tell Walker where to inherit it's parent and id values
@@ -107,7 +113,7 @@ class Walker_Quickstart_Menu extends Walker {
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
         $output .= sprintf( "\n<a class='item' href='%s'%s>%s</a>\n",
             $item->url,
-            ( $item->object_id === get_the_ID() ) ? ' class="current"' : '',
+            ( $item->object_id === get_the_ID() ) ? ' class="current"' : 'active',
             $item->title
         );
     }
